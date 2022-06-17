@@ -1,180 +1,129 @@
-﻿<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-height-unit="%" data-tchmi-height="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100">
+﻿<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-height-unit="%" data-tchmi-height="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100" data-tchmi-is-enabled="true">
   
-<div id="Header_Top" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="80" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-right="0">
+<div id="Header_Top" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="80" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-right="0" data-tchmi-expandable="true">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
 "divider",
 "divider-top"
 ]
 </script><script data-tchmi-target-attribute="data-tchmi-header-items" type="application/json">
 [
-{
-"itemType": "Image",
- "priority": "2",
- "itemAlign": "Left",
- "prefWidth": 288.0,
- "prefWidthUnit": "px",
-  "prefHeight": 95.0,
- "prefHeightUnit": "px",
- "minWidth": 128.0,
-"minWidthUnit": "px",
-"classList": [],
-"accessRights": [],
- "image": "Images/Beckhoff_Logo.svg",
-"altText": "Beckhoff",
-"targetRegion": "%ctrl%Region_Center%/ctrl%",
-"targetContent": "Pages/StartPage.content"
-},
-{
-"itemType": "Text",
- "priority": "1",
- "itemAlign": "Left",
- "prefWidth": 288.0,
- "prefWidthUnit": "px",
- "prefHeight": 95.0,
- "prefHeightUnit": "px",
- "minWidth": 128.0,
- "minWidthUnit": "px",
-"classList": [],
-"accessRights": [],
- "text": "TcHMI_Ticket_Generator"
-},
-{
-"itemType": "EventLine",
- "priority": "5",
- "itemAlign": "Right",
- "prefWidth": 800.0,
- "prefWidthUnit": "px",
- "prefHeight": 48.0,
- "prefHeightUnit": "px",
- "minWidth": 288.0,
- "minWidthUnit": "px",
-"classList": [],
-"accessRights": [],
- "filter":
- [
- {
- "path": "severity",
- "comparator": ">=",
- "value": 0
-}
- ],
-"targetRegion": "%ctrl%Region_Center%/ctrl%",
-"targetContent": "Pages/Events.content"
- },
-{
-"itemType": "AdsState",
- "priority": "3",
- "itemAlign": "Right",
- "prefWidth": 160.0,
- "prefWidthUnit": "px",
- "prefHeight": 48.0,
- "prefHeightUnit": "px",
- "minWidth": 48.0,
- "minWidthUnit": "px",
-"classList": [],
-"accessRights": [],
- "adsRuntime": "TcSysService",
- "iconWidth": 48,
- "iconWidthUnit": "px",
-"text": "TwinCAT",
- "textPosition": "Left",
- "serverInterval": 1000,
- "serverDomain": "ADS",
-"stateImages": {
- "Fallback":"Images/TwinCAT/twincat-fallback.svg",
-"Run":"Images/TwinCAT/twincat-run.svg",
-"Stop":"Images/TwinCAT/twincat-stop.svg",
-"Config":"Images/TwinCAT/twincat-config.svg",
-"Exception":"Images/TwinCAT/twincat-exeption.svg"
-}
-},
- {
-"itemType": "AdsState",
- "priority": "3",
- "itemAlign": "Right",
- "prefWidth": 160.0,
- "prefWidthUnit": "px",
- "prefHeight": 48.0,
- "prefHeightUnit": "px",
- "minWidth": 48.0,
- "minWidthUnit": "px",
-"classList": [],
-"accessRights": [],
- "adsRuntime": "PLC1",
- "iconWidth": 48,
- "iconWidthUnit": "px",
-"text": "PLC",
- "textPosition": "Left",
- "serverInterval": 1000,
- "serverDomain": "ADS",
-"stateImages": {
- "Fallback":"Images/PLC/plc-fallback.svg",
-"Run":"Images/PLC/plc-run.svg",
-"Stop":"Images/PLC/plc-stop.svg",
-"Config":"Images/PLC/plc-config.svg",
-"Exception":"Images/PLC/plc-exeption.svg"
-}
-},
- {
-"itemType": "UserManagement",
- "priority": "3",
- "itemAlign": "Right",
- "prefWidth": 288.0,
- "prefWidthUnit": "px",
- "prefHeight": 48.0,
- "prefHeightUnit": "px",
- "minWidth": 176.0,
- "minWidthUnit": "px",
-"classList": [],
-"accessRights": [],
-"allowLogout": true,
-"allowSwitchUser": false
- },
- {
-"itemType": "Time",
- "priority": "4",
-"itemAlign": "Right",
- "prefWidth": 128.0,
- "prefWidthUnit": "px",
- "prefHeight": 48.0,
-"prefHeightUnit": "px",
-"minWidth": 96.0,
-"minWidthUnit": "px",
-"classList": [],
-"accessRights": []
-}
+  {
+    "itemType": "Image",
+    "priority": "2",
+    "itemAlign": "Left",
+    "prefWidth": 288.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 95.0,
+    "prefHeightUnit": "px",
+    "minWidth": 128.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "image": "Images/Beckhoff_Logo.svg",
+    "altText": "Beckhoff",
+    "targetRegion": "%ctrl%Region_Center%/ctrl%",
+    "targetContent": "Pages/StartPage.content"
+  },
+  {
+    "itemType": "Text",
+    "priority": "1",
+    "itemAlign": "Left",
+    "prefWidth": 288.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 95.0,
+    "prefHeightUnit": "px",
+    "minWidth": 128.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "text": "Ticket Generator ",
+    "targetContent": ""
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "adsRuntime": "TcSysService",
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "TwinCAT",
+    "textPosition": "Left",
+    "serverInterval": 1000.0,
+    "serverDomain": "ADS",
+    "stateImages": {
+      "Fallback": "Images/TwinCAT/twincat-fallback.svg",
+      "Run": "Images/TwinCAT/twincat-run.svg",
+      "Stop": "Images/TwinCAT/twincat-stop.svg",
+      "Config": "Images/TwinCAT/twincat-config.svg",
+      "Exception": "Images/TwinCAT/twincat-exeption.svg"
+    }
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "adsRuntime": "PLC1",
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "PLC",
+    "textPosition": "Left",
+    "serverInterval": 1000.0,
+    "serverDomain": "ADS",
+    "stateImages": {
+      "Fallback": "Images/PLC/plc-fallback.svg",
+      "Run": "Images/PLC/plc-run.svg",
+      "Stop": "Images/PLC/plc-stop.svg",
+      "Config": "Images/PLC/plc-config.svg",
+      "Exception": "Images/PLC/plc-exeption.svg"
+    }
+  },
+  {
+    "itemType": "UserManagement",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 288.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 176.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "allowLogout": true,
+    "allowSwitchUser": false
+  },
+  {
+    "itemType": "Time",
+    "priority": "4",
+    "itemAlign": "Right",
+    "prefWidth": 128.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 96.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "timeDisplayLayout": "TimeDateMultiLine"
+  }
 ]
-</script></div><div id="Navigation_Left" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-width="320" data-tchmi-left="0" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-bottom="0" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-navigation-orientation="Vertical" data-tchmi-keep-lowest-level="true">
-
-<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
-"divider",
-"divider-left"
-]
-</script><script data-tchmi-target-attribute="data-tchmi-navigation-structure" type="application/json">[
-{
- "name": "%l%L_StartPage%/l%",
- "content": "Pages/StartPage.content",
- "icon_a": "Themes/Base/Images/Placeholder/placeholder_active.svg",
- "icon_n": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
- "icon_p": "Themes/Base/Images/Placeholder/placeholder_pressed.svg"
-},
-{
- "name": "%l%L_Events%/l%",
- "content": "Pages/Events.content",
- "icon_a": "Themes/Base/Images/Events/message_active.svg",
- "icon_n": "Themes/Base/Images/Events/message_normal.svg",
- "icon_p": "Themes/Base/Images/Events/message_pressed.svg"
-},
-{
- "name": "%l%L_Settings%/l%",
- "content": "Pages/Settings.content",
- "icon_a": "Themes/Base/Images/Settings/settings_active.svg",
- "icon_n": "Themes/Base/Images/Settings/settings_normal.svg",
- "icon_p": "Themes/Base/Images/Settings/settings_pressed.svg"
-}
-]</script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-scrolling="Yes" data-tchmi-bottom="0" data-tchmi-right="0">
-
-<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script></div><script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+</script></div>>><script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
 {
  "event": "%ctrl%Desktop::RenderedWidth%/ctrl%", 
@@ -200,4 +149,38 @@
 ]
 }
 ]
-</script></div>
+</script><div id="TcHmiTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Customer Information:" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="239" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+</div>
+<div id="TcHmiTextblock_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Name: " data-tchmi-top="136" data-tchmi-top-unit="px" data-tchmi-width="56" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+</div>
+<div id="TcHmiTextblock_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Company:" data-tchmi-top="172" data-tchmi-top-unit="px" data-tchmi-width="56" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+</div>
+<div id="TcHmiTextblock_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Email: " data-tchmi-top="208" data-tchmi-top-unit="px" data-tchmi-width="56" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+</div>
+<div id="TcHmiTextblock_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Phone Number: " data-tchmi-top="244" data-tchmi-top-unit="px" data-tchmi-width="79" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+</div>
+<div id="TcHmiTextbox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="99" data-tchmi-left-unit="px" data-tchmi-text="Textbox" data-tchmi-top="136" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{"top":3,"right":3,"bottom":3,"left":3}
+</script>
+
+</div>
+<div id="TcHmiTextbox_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="99" data-tchmi-left-unit="px" data-tchmi-text="Textbox" data-tchmi-top="172" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{"top":3,"right":3,"bottom":3,"left":3}
+</script>
+
+</div>
+<div id="TcHmiTextbox_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="99" data-tchmi-left-unit="px" data-tchmi-text="Textbox" data-tchmi-top="208" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{"top":3,"right":3,"bottom":3,"left":3}
+</script>
+
+</div>
+<div id="TcHmiTextbox_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="99" data-tchmi-left-unit="px" data-tchmi-text="Textbox" data-tchmi-top="244" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{"top":3,"right":3,"bottom":3,"left":3}
+</script>
+
+</div>
+</div>
